@@ -1,0 +1,185 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>דף הבית - EyeLearn</title>
+    <meta name="description" content="חומרי עזר מקוונים לקורס חקר UX באמצעות מעקב עיניים">
+    <meta name="keywords" content="מעקב עיניים, EyeLearn,חומרי עזר מקוונים">
+    <meta name="author" content="בן שני, סתו לחייני">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="icon" href="Images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="styles/StyleSheet4.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflXnwWCE/www-widgetapi.js" async=""></script>
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+</head>
+<body>
+    <article>
+        <header class="bg-dark">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+                <div class="container">
+                    <!--תפריט המבורגר-->
+                    <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="custom-toggler navbar-toggler-icon"></span>
+                    </button>
+                    <a href="index.html">
+                    <img id="myLOGO" class="myLogo" src="images/logo7.png" />
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-underline-from-right" href="Tobii.html">מערכת TOBII  </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-white hvr-underline-from-right" href="settingsUx.html">הגדרות מחקר UX  </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-underline-from-right" href="Methods.html">מתודות מחקר UX  </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-underline-from-right" href="Data.html">ניתוח DATA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-underline-from-right" href="about.html">אודות</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="backrounImg" class="row col-xs-12 imgBack"></div>
+            <div id="homeBanner" class="row col-xs-12">
+                <div class="container">
+                    <h1>עזרים לימודיים לקורס חקר UX באמצעות מעקב עיניים</h1>
+                    <p class="mySentence">בחרו נושא ללמידה והגיעו מוכנים לשיעור</p>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div id="main" class="container mt-5">
+                <div class="row">
+                    <div class="space col-md-3 col-sm-6 col-xs-2">
+                        <div class="rounded inner">
+                            <img src="images/uxSetting.jpg" class="img-fluid" />
+                            <div class=" rounded overlay ctr"></div>
+                            <div class=" rounded overlay ctr">
+                                <h4 class="card-title">הגדרות מחקר UX </h4>
+                                <button type="button" class="btn btn-light" onclick="location.href = '/settingsUx.html'">
+                                    התחל
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space col-md-3 col-sm-6 col-xs-2">
+                        <div class="rounded inner">
+                            <img src="images/method1.png" class="img-fluid" />
+                            <div class=" rounded overlay ctr">
+                                <h4 class="card-title">מתודות מחקר UX </h4>
+                                <button id="btnTobii" type="button" class="btn btn-light" onclick="location.href = '/Methods.html'">התחל</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space col-md-3 col-sm-6 col-xs-2">
+                        <div class="rounded inner">
+                            <img src="images/tobiipro1.png" class="img-fluid" />
+                            <div class="overlay rounded ctr">
+                                <h4 class="card-title">מערכת TOBII</h4>
+                                <button id="btnTobii" type="button" class="btn btn-light" onclick="location.href = '/Tobii.html'">
+                                    התחל
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space col-md-3 col-sm-6 col-xs-2">
+                        <div class="rounded inner">
+                            <img src="images/data.png" class="img-fluid" />
+                            <div class="overlay rounded ctr">
+                                <h4 class="card-title">ניתוח DATA</h4>
+                                <button type="button" class="btn btn-light" onclick="location.href = '/Data.html'">התחל</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<%--אינפוגרפיקה--%>-->
+            <div class="container">
+                <div class="row">
+                    <div id="infoCard" class="col-sm-10 offset-sm-1">
+                        <div class="container">
+                            <div class="row">
+                                <div class=" infografic col-md-6 col-sm-12">
+                                    <div class="container-fluid">
+                                        <div class="map">
+                                            <div class="map-item map-item1">
+                                                <a class="marker hvr-pulse-grow" href="#marker1">1</a>
+                                                <aside id="marker1" class="map-popup col-md-5 col-lg-5 col-12 col-sm-12">
+                                                    <div class="xpop">X</div>
+                                                    <h5>אזורים צהובים</h5>
+                                                    <p class="popUpText">באזורים אלו, ניתן לזהות שהביטו בהם (אך לא הרבה כמו האזור האדום), אזור שכמעט כל משתמש סרק במבטו אך לא בהכרח התמקד בו.</p>
+                                                </aside>
+                                            </div>
+                                            <div class="map-item map-item2">
+                                                <a class="marker hvr-pulse-grow" href="#marker2">2</a>
+
+                                                <aside id="marker2" class="map-popup col-md-6 col-offset-lg-1 col-lg-6 col-12 col-sm-12">
+                                                    <div class="xpop">X</div>
+                                                    <h5 class="popup-title">אזורים אדומים</h5>
+                                                    <p class="popUpText">אזורים אלה במסך היו אלה שהביטו בהם הכי הרבה, נסו להבין מה מייחד אותם.</p>
+                                                </aside>
+                                            </div>
+                                            <div class="map-item map-item3">
+                                                <a class="marker hvr-pulse-grow" href="#marker3">3</a>
+
+                                                <aside id="marker3" class="map-popup col-md-6 col-offset-lg-1 col-lg-6 col-12 col-sm-12">
+                                                    <div class="xpop">X</div>
+                                                    <h5>אזורים בעלי עניין נמוך</h5>
+                                                    <p class="popUpText">חלקים אלה של המסך כמעט ולא משכו את עיניהם של הנבדקים, נסו לזהות דפוסים שגרמו לכך.</p>
+                                                </aside>
+                                            </div>
+                                            <img id="heatMap" src="images/heatMap.png" alt="מפת חום לדוגמא">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="nextToImg" class="col-md-6 col-sm-12 infografic">
+                                    <h2>מפות חום</h2>
+                                    <p>מתוך מערכת מעקב העיניים יוצאים פלטים מסוגים שונים, באמצעות מפות חום נוכל לקבל מידע חיוני למחקר על מספר רב של משתתפים.</p>
+                                    <p>לחצו על הנקודות כדי ללמוד על הצבעים השונים במפת החום</p>
+                                    <p>מעניין אתכם ללמוד עוד?</p>
+                                    
+                                    <button class="readMoreBtn btn btn-ligh" onclick="location.href = '/Data.html'">קרא עוד</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="page-footer font-small bg-dark text-white">
+                <div class="footer-copyright text-center py-3">
+                    <a href="https://www.hit.ac.il/">
+                        <img id="hitLOGO" src="images/logoHIT.png" />
+                    </a>
+                    <p> © 2020 HIT </p>
+                    <p>אתר זה נבנה כחלק מפוריקט גמר לתואר טכנולוגיות למידה </p>
+                    <p>מנחים: ד"ר היילי וויגלט-מרום ואורן בן אהרון</p>
+                    <p><a id="freePik" href="https://www.freepik.com">Logo vector created by andi asmara - www.freepik.com</a></p>
+                </div>
+            </footer>
+        </section>
+    </article>
+</body>
+</html>
