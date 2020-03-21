@@ -1,0 +1,343 @@
+﻿/*עיצוב אינפוגרפיקה*/
+/*אייקון של איקס בפופ אפ*/
+.xpop {
+    width: 30px !important;
+    height: 30px;
+    left: 0;
+    right: 0;
+}
+
+.popup-title {
+    display: block;
+}
+
+.popupQuest {
+    text-align: center;
+}
+
+map.h3 {
+    font-size: 17pt;
+    display: inline;
+}
+/*small screens*/
+.map-popup {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    z-index: 99;
+    width: 80vw;
+    padding: 2rem;
+    background-color: #fff;
+    transition: all 300ms ease-in;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 24px rgba(0,0,0,0.22);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.marker {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    width: 55%;
+    height: 55%;
+    color: #fff;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: tomato;
+    transition: all 300ms;
+}
+
+.map-item {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+}
+
+.map-item1 {
+    top: 16%;
+    left: 40%;
+}
+
+.map-item2 {
+    top: 05.5%;
+    left: 8%;
+}
+
+.map-item3 {
+    top: 32%;
+    left: 41%;
+}
+
+
+.marker:hover {
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 0px 6px 2px rgba(255,99,71,1);
+}
+
+.popUpText {
+    margin-top: 14px;
+    margin-bottom: 1rem;
+    text-align: center !important;
+}
+
+@media only screen and (max-device-width : 440px) {
+
+
+    .popUpText {
+        margin-top: 14px;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .xpop {
+        width: 30px !important;
+        height: 30px;
+        left: 0;
+        right: 0;
+    }
+
+    .popup-title {
+        display: block;
+    }
+
+    .map-item {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+        .map-item .marker {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 50%;
+            height: 50%;
+        }
+
+
+    .map-item1 {
+        top: 16%;
+        left: 41%;
+    }
+
+    .map-item2 {
+        top: 05.5%;
+        left: 10.5%;
+    }
+
+    .map-item3 {
+        top: 32%;
+        left: 45%;
+    }
+
+    .map-popup:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -16px;
+        margin-top: -16px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 16px 16px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+
+    .map-popup.edge {
+        left: auto;
+        right: calc(100% + 24px);
+    }
+
+        .map-popup.edge:before {
+            left: auto;
+            right: -16px;
+            border-width: 16px 0 16px 16px;
+            border-color: transparent transparent transparent #fff;
+        }
+
+    map.h3 {
+        font-weight: bold;
+        font-size: 10pt;
+    }
+
+    map.p {
+        font-size: 8pt;
+        text-align: center !important;
+    }
+
+    .map-popup {
+        width: 80vw;
+        overflow: hidden;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .marker {
+        position: absolute;
+        z-index: 1;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        color: #fff;
+        line-height: 21px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: tomato;
+        transition: all 300ms;
+    }
+}
+
+.map {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+    .map img {
+        display: block;
+        width: 100%;
+    }
+
+.map-popup > *:first-child {
+    margin-top: 0;
+}
+
+.map-popup > *:last-child {
+    margin-bottom: 0;
+}
+
+.map-popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media only screen and (min-width:30em) {
+    .map-item {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+        .map-item .marker {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 50%;
+            height: 50%;
+        }
+
+
+    .map-item1 {
+        top: 16%;
+        left: 45%;
+    }
+
+    .map-item2 {
+        top: 4%;
+        left: 10.5%;
+    }
+
+    .map-item3 {
+        top: 32%;
+        left: 45%;
+    }
+
+    .popUpText {
+        margin-top: 14px;
+        margin-bottom: 1rem;
+        text-align: right;
+    }
+    /*large screens*/
+    .map-popup {
+        width: 40vw;
+        float: left;
+        overflow: hidden;
+        position: fixed;
+        transform: translate(-50%, -30%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 20px;
+        padding: 2%;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+        .map-popup:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -16px;
+            margin-top: -16px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 16px 16px 16px 0;
+            border-color: transparent #fff transparent transparent;
+        }
+
+        .map-popup.edge {
+            left: auto;
+            right: calc(100% + 24px);
+        }
+
+            .map-popup.edge:before {
+                left: auto;
+                right: -16px;
+                border-width: 16px 0 16px 16px;
+                border-color: transparent transparent transparent #fff;
+            }
+
+    summary::marker {
+        display: none
+    }
+}
+
+@keyframes pulse {
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#infoCard h4 {
+    font-size: 10pt;
+}
+
+#infoCard p {
+    font-size: 8pt;
+    text-align: right;
+}
