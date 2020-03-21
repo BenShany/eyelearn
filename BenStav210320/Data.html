@@ -1,0 +1,166 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ניתוח Data</title>
+    <meta name="description" content="ניתוח נתונים ופלטים ממערכת מעקב עיניים">
+    <meta name="keywords" content="Tobii, Data, ניתוח נתונים">
+    <meta name="author" content="בן שני, סתו לחייני">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="icon" href="Images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="styles/StyleSheet4.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <%--שייך להכנסת וידיאו API--%>
+    <script src="jquery.tubber.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+</head>
+<body>
+    <article class="Mood">
+        <header class="bg-dark">
+
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+                <div class="container">
+                    <!--תפריט המבורגר-->
+                    <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="custom-toggler navbar-toggler-icon"></span>
+                    </button>
+                    <a href="index.html">
+                        <img id="myLOGO" class="myLogo" src="images/logo7.png" />
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-underline-from-right" href="Tobii.html">מערכת TOBII</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-white hvr-underline-from-right" href="settingsUx.html">הגדרות מחקר UX </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-underline-from-right" href="Methods.html">מתודות מחקר UX </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-underline-from-right current" href="Data.html">ניתוח DATA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white hvr-underline-from-right" href="about.html">אודות</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section id="backrounImgData" class="Bimg row imgBack">
+                <div class="container over-image">
+                    <h1 class="headTitel">ניתוח Data</h1>
+                </div>
+            </section>
+        </header>
+        <section class="container">
+            <div id="accordion">
+                <h2>Heatmaps</h2>
+                <div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h3>מה לומדים כאן?</h3>
+                            <p class="Jtext">
+                                לאחר שביצענו מחקר, קיימת בידינו כמות גדולה של מידע. מידע כזה יכול להיות מסוגים שונים (ויזואליים או כתובים), ממספר רב של משתתפים. ברשותנו מספר כלים להתנהל עם סוגי מידע כאלה, עליהם נפרט בפרק זה.  UX, לפי כל השלבים המקובלים בתעשיה.
+                            </p>
+                            <p class="myP"><b>תוכלו למצוא כאן את הנושאים הבאים:</b></p>
+                            <ul>
+                                <li>נושא 1</li>
+                                <li>נושא 2</li>
+                                <li>נושא 3</li>
+                            </ul>
+                            <p class="myP">זהו דוגמא לסרטון המוטמע בAPI</p>
+                            <p class="timeWatch">
+                                <b>זמן צפייה: </b> 03:42
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="embed-responsive embed-responsive-4by3 acord media">
+                                <div id="player4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>GazePlots</h2>
+                <div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h3>מה לומדים כאן?</h3>
+                            <p class="Jtext">
+                                לאחר שביצענו מחקר, קיימת בידינו כמות גדולה של מידע. מידע כזה יכול להיות מסוגים שונים (ויזואליים או כתובים), ממספר רב של משתתפים. ברשותנו מספר כלים להתנהל עם סוגי מידע כאלה, עליהם נפרט בפרק זה.  UX, לפי כל השלבים המקובלים בתעשיה.
+                            </p>
+                            <p class="myP"><b>תוכלו למצוא כאן את הנושאים הבאים:</b></p>
+                            <ul>
+                                <li>נושא 1</li>
+                                <li>נושא 2</li>
+                                <li>נושא 3</li>
+                            </ul>
+                            <p class="timeWatch">
+                                <b>זמן צפייה: </b> 02:01
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="embed-responsive embed-responsive-4by3 acord media">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4IPH7Md_isM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Area Of Interest</h2>
+                <div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h3>מה לומדים כאן?</h3>
+                            <p class="Jtext">
+                                לאחר שביצענו מחקר, קיימת בידינו כמות גדולה של מידע. מידע כזה יכול להיות מסוגים שונים (ויזואליים או כתובים), ממספר רב של משתתפים. ברשותנו מספר כלים להתנהל עם סוגי מידע כאלה, עליהם נפרט בפרק זה.  UX, לפי כל השלבים המקובלים בתעשיה.
+                            </p>
+                            <p class="myP"><b>תוכלו למצוא כאן את הנושאים הבאים:</b></p>
+                            <ul>
+                                <li>נושא 1</li>
+                                <li>נושא 2</li>
+                                <li>נושא 3</li>
+                            </ul>
+                            <p class="timeWatch">
+                                <b>זמן צפייה: </b> 02:31
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="embed-responsive embed-responsive-4by3 acord media">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4IPH7Md_isM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <footer class="page-footer font-small bg-dark text-white">
+            <div class="footer-copyright text-center py-3">
+                <a href="https://www.hit.ac.il/">
+                    <img id="hitLOGO" src="images/logoHIT.png" />
+                </a>
+                <p> © 2020 HIT </p>
+                <p>אתר זה נבנה כחלק מפוריקט גמר לתואר טכנולוגיות למידה </p>
+                <p>מנחים: ד"ר היילי וויגלט-מרום ואורן בן אהרון</p>
+                <p><a id="freePik" href="https://www.freepik.com">www.freepik.com</a></p>
+            </div>
+        </footer>
+    </article>
+</body>
+</html>
