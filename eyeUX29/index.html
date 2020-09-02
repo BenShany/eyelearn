@@ -1,0 +1,444 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>דף הבית - eyeUX</title>
+    <meta name="description" content="חומרי עזר מקוונים לקורס חקר UX באמצעות מעקב עיניים">
+    <meta name="keywords" content="מעקב עיניים, eyeUX,חומרי עזר מקוונים">
+    <meta name="author" content="בן שני, סתו לחייני">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="icon" href="Images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflXnwWCE/www-widgetapi.js" async=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+</head>
+<body>
+    <article>
+        <header dir="ltr">
+            <!--תפריט ניווט-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img height="35" width="120" src="images/eyeUX-logo1.png" alt="לוגו הפרויקט">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto mr-5">
+                            <li class="nav-item">
+                                <a class="nav-link navChange4" href="#divAbout">אודות</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navChange3" href="#dataInfografic">DATA ניתוח</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navChange2" href="#methods">UX מתודות מחקר</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navChange1" href="#tobii">Tobii מערכת</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="images/LAB1.mp4" type="video/mp4">
+            </video>
+            <div class="d-flex h-100 text-center align-items-center container">
+                <div class="w-100 text-white">
+                    <h1 class="display-4">ברוכים הבאים לקורס חווית משתמש ולמידה באמצעות מערכת מעקב עיניים</h1>
+                    <p class="lead mb-0">בהנחיית ד"ר היילי וייגלט-מרום ואורן בן אהרון</p><br />
+                    <a id="circlbutton" href="#firstdiv">
+                        <img style="width:20px; height:10px;" src="images/arrow.png" />
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!--parallax-->
+        <div id="firstdiv" style="padding-top:50px;">
+            <div class="container">
+                <!--טקסט הסבר על האתר-->
+                <div id="firstText" class="enter-text">
+                    <h2>כאן לומדים אחרת</h2>
+                    <p style="font-size:16pt; max-width:90%;">
+                        פיקסציות, סקאדות, מפות חום, מתודות... כל אלה הם רק חלק מעולם המושגים העשיר שתחשפו אליו בקורס.
+                        <br />
+                        השילוב בין תחומי חווית המשתמש ומעקב העיניים הוא סיפור בפני עצמו.
+                        <br />
+                        לכם נשאר רק לבחור פרק ולהתחיל ללמוד. תהנו!
+                    </p>
+                </div>
+
+                <!--card try-->
+                <div class="card-deck">
+                    <div class="card make-it-slow">
+                        <a type="button" href="#tobii">
+                            <img class="card-img-top" src="images/tobiipro1.jpeg" alt="Card image cap">
+                            <div class="parts1 card-body">
+                                <h5>מערכת TOBII</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card make-it-slow">
+                        <a type="button" href="#methods">
+                            <img class="card-img-top" src="images/method1.jpeg" alt="Card image cap">
+                            <div class="parts1 card-body">
+                                <h5>מתודות מחקר UX</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card make-it-slow">
+                        <a type="button" href="#dataInfografic">
+                            <img class="card-img-top" src="images/data.jpeg" alt="Card image cap">
+                            <div class="parts1 card-body">
+                                <h5>ניתוח Data</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--מערכת TOBII-->
+        <div id="tobii" class="parallax">
+            <div class="container">
+                <h2>מערכת TOBII</h2>
+                <p style="font-size:14pt; max-width:80%;
+">
+                    Tobii היא מערכת מעקב עיניים, בעזרתה נוכל לקבל תיעוד מדויק של מבט המשתמש. <br />במעבדת ה-UX במכון הטכנולוגי קיימת מערכת ה-Tobii  בה תוכלו להתנסות באופן מעשי.
+                    <br />
+                    בינתיים תוכלו לצפות בסרטונים וללמוד על המערכת מרחוק - החל מחיבורים פיזיים ועד לתפעול כללי של התוכנה.
+                </p>
+                <br />
+                <!--פרק מערכת טובי-->
+                <div class="card-deck">
+                    <div class="card make-it-slow">
+                        <img class="card-img-top" src="images/tobiiVideo1.jpeg" alt="Card image cap">
+                        <div class="parts2 card-body">
+                            <h5>הרכבת מערכת TOBII</h5>
+                            <a class="aButton" href="#tobbiVideo1" onclick="myFunc2('tobbiVideo1')" type="button">לצפייה</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">זמן צפייה: 1:59</small>
+                        </div>
+                    </div>
+                    <div class="card make-it-slow">
+                        <img class="card-img-top" src="images/tobiiVideo2.png" alt="Card image cap">
+                        <div class="parts2 card-body">
+                            <h5 class="card-title">קליברציה</h5>
+                            <a class="aButton align-items-baseline" href="#tobbiVideo2" onclick="myFunc2('tobbiVideo2')" type="button">לצפייה</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">זמן צפייה: 3:02</small>
+
+                        </div>
+                    </div>
+                    <div class="card make-it-slow">
+                        <img class="card-img-top" src="images/tobiiVideo3.png" alt="Card image cap">
+                        <div class="parts2 card-body">
+                            <h5 class="card-title">בניית פרויקט מחקר</h5>
+                            <a class="aButton align-items-baseline" href="#tobbiVideo3" onclick="myFunc2('tobbiVideo3')" type="button">לצפייה</a>
+
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">זמן צפייה: 4:55</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--סרטוני TOBBI-->
+        <!--סרטון ראשון - הרכבת חומרה-->
+        <div class="colorb" style="font-size:1rem!important;">
+            <div id="tobbiVideo1" class="content container colorb">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <h3>הרכבת מערכת TOBII</h3>
+                        <p>
+                            בסרטון הקצר הבא נכיר את הרכיבים של מערכת מעקב עיניים - Tobii Pro Lab
+                            <br />
+                            ונבין איך לחבר אותה למחשב לפני תחילת התפעול שלה.
+                        </p>
+                        <p class="myP"><b>מה נלמד?</b></p>
+                        <ul>
+                            <li>רכיבי מערכת Tobii</li>
+                            <li>חיבורים והרכבת החומרה</li>
+                        </ul>
+                        <p class="timeWatch">
+                            <b>זמן צפייה: </b> 01:59
+                        </p>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="embed-responsive embed-responsive-16by9 acord media rounded">
+                            <iframe id="myv" src="https://www.youtube-nocookie.com/embed/mEsvLDPb39Y" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--סרטון שני - קליברציה-->
+            <div id="tobbiVideo2" class="content container colorb">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <h3>קליברציה</h3>
+                        <p>
+                            הסרטון הבא עוסק בתהליך חשוב שעל הנבדקים לעבור בכל ניסוי. בעזרת הקליברציה נוכל לוודא שהמערכת מסנכרנת את נתוני הנבדק כדי לקבל תוצאות מדויקות ואמינות. נלמד להגדיר ולהבין מה כולל התהליך, ואיך להשתמש במידע שהוא תורם לנו לאחר מכן.
+                        </p>
+                        <p class="myP"><b>מה נלמד?</b></p>
+                        <ul>
+                            <li>מהי קליברציה</li>
+                            <li>הגדרות הכיול</li>
+                            <li>אופן הביצוע</li>
+                            <li>בדיקת איכות הקליברציה</li>
+                        </ul>
+                        <p class="timeWatch">
+                            <b>זמן צפייה:</b> 03:02
+                        </p>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="embed-responsive embed-responsive-16by9 acord media rounded">
+                            <iframe id="myv" src="https://www.youtube-nocookie.com/embed/6rSZH7lvbdk" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--סרטון שלישי - בניית פרויקט מחקר-->
+            <div id="tobbiVideo3" class="container content colorb">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <h3>בניית פרויקט מחקר</h3>
+                        <p>
+                            בסרטון זה נלמד על הצעדים הראשונים לקראת המחקר הראשון שלכם. נראה איך פותחים פרויקט חדש ומה חשוב לסמן על גבי המערכת. שימו לב, חלק מההגדרות הן קבועות לכל מחקר וחלקן ניתנות לשינוי בהתאם לשאלת המחקר שלכם.
+                        </p>
+                        <p class="myP"><b>מה נלמד?</b></p>
+                        <ul>
+                            <li>פתיחת פרויקט</li>
+                            <li>העלאת מסכי המחקר</li>
+                            <li>הגדרת משתנים</li>
+                        </ul>
+                        <p class="timeWatch">
+                            <b>זמן צפייה:</b> 04:55
+                        </p>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="embed-responsive embed-responsive-16by9 acord media rounded">
+                            <iframe src="https://www.youtube-nocookie.com/embed/dO8v-KTFqx0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--פרק מתודות-->
+            <div id="methods" class="content colorn">
+                <div class="container">
+                    <h2>מתודות UX</h2>
+                    <p style="font-size:14pt; max-width:80%">
+                        חווית משתמש הוא מושג שכנראה מוכר לכם. איך אפשר בלעדיו? הרי כל הצלחה של אתר או מוצר תלויה בחוויה שהמשתמשים עוברים. כדי להבין אותו לעומק.  בקורס תלמדו את  5 המתודות המרכזיות לבדיקת חווית משתמש.
+                    </p>
+                    <p style="font-size:12pt; max-width:80%">
+                        <span style="font-weight:bold">רוצים לדעת עוד?</span>
+                        בפרק זה מוקדשת לומדה לכל אחת מהמתודות. <br />הלומדות קצרות וממוקדות.
+                        5 דקות יספיקו לכם לכל לומדה בהצלחה.
+                    </p>
+                    <br />
+                    <div class="card-deck">
+                        <div class="card make-it-slow">
+                            <img class="card-img-top" src="images/firstClick.jpeg" alt="first click testing image">
+                            <div class="card-body">
+                                <h5 class="card-title">First Click Testing</h5>
+                                <a class="aButton align-items-baseline" href="#firstClick" onclick="myFunc2('firstClick')" type="button">לצפייה</a>
+                            </div>
+                        </div>
+                        <div class="card make-it-slow">
+                            <img class="card-img-top" src="images/ABT.jpeg" alt="a b testing image">
+                            <div class="card-body">
+                                <h5 class="card-title">A/B Testing</h5>
+                                <a class="aButton align-items-baseline" href="#abTesting" onclick="myFunc2('abTesting')" type="button">לצפייה</a>
+                            </div>
+                        </div>
+                        <div class="card make-it-slow">
+                            <img class="card-img-top" src="images/5_second.jpeg" alt="five second test image">
+                            <div class="card-body">
+                                <h5 class="card-title">Five Second Test</h5>
+                                <a class="aButton align-items-baseline" href="#fiveSecondTest" onclick="myFunc2('fiveSecondTest')" type="button">לצפייה</a>
+                            </div>
+                        </div>
+                        <div class="card make-it-slow">
+                            <img class="card-img-top" src="images/TA.jpeg" alt="think aloud test image">
+                            <div class="card-body">
+                                <h5 class="card-title">Think Aloud Test</h5>
+                                <a class="aButton align-items-baseline" href="#thinkAloud" onclick="myFunc2('thinkAloud')" type="button">לצפייה</a>
+                            </div>
+                        </div>
+                        <div class="card make-it-slow">
+                            <img class="card-img-top" src="images/CS.jpeg" alt="Card sorting image">
+                            <div class="card-body">
+                                <h5 class="card-title">Card Sorting</h5>
+                                <a class="aButton align-items-baseline" href="#CardSorting" onclick="myFunc2('CardSorting')" type="button">לצפייה</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--פירוט מתודות-->
+        <!--ab testing-->
+        <div class="parallax2">
+            <div id="abTesting" class="container content">
+                <div>
+                    <div class="col-12">
+                        <h3>A/B Testing</h3>
+                        <p style="max-width:80%">
+                            מתודה פופולרית שנמצאת בשימוש נרחב בתחומים מגוונים בתעשייה. משתמשים בה בדרך כלל בפיתוח של פיצ'ר/מוצר/ אתר חדש, אך גם בשלבי אפיון מוקדמים. במסגרתה משווים בין 2 גרסאות (A מול B) של מוצר או ממשק, כדי להבין מי הגרסה המוצלחת יותר או העדיפה מבין השתיים..
+                        </p>
+                        <br />
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" src="storyline/5SecondTest-V3 - Storyline output/story.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--fisrt click testing-->
+            <div id="firstClick" class="container content">
+                <div>
+                    <div class="col-12">
+                        <h3>First Click Testing</h3>
+                        <p style="max-width:80%">
+                            מתודה זו נועדה לבדוק האם משתמש יכול, באופן אפקטיבי, למצוא את הצעד הראשון בדרך להשלמת משימה כלשהי בממשק. <br /> השימוש בשיטה נועד לבדוק האם מאפיין או סממן מסוים במערכת גלוי מספיק לעין.
+                        </p>
+                        <br />
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" src="storyline/5SecondTest-V3 - Storyline output/story.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--5 second test-->
+            <div id="fiveSecondTest" class="container content">
+                <div>
+                    <div class="col-12">
+                        <h3>Five Second Test</h3>
+                        <p style="max-width:90%">
+                            מתודה בה מראים עיצוב של ממשק מסוים לנבדק למשך 5 שניות בדיוק. לאחר מכן, שואלים אותו שאלות שמתבססות על החשיפה הקצרה לממשק. <br />המתודה יעילה במיוחד כאשר יש צורך להבין את הרושם הראשוני מהמערכת או מהממשק.
+                        </p>
+                        <br />
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" src="storyline/5SecondTest-V3 - Storyline output/story.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--Think Aloud-->
+            <div id="thinkAloud" class="container content">
+                <div>
+                    <div class="col-12">
+                        <h3>Think Aloud</h3>
+                        <p style="max-width:80%">
+                            חשיבה בקול היא ורבליזציה של המחשבות בזמן ביצוע משימה. בשיטה זו, הנבדקים נדרשים לומר (בזמן הביצוע) כל דבר שהם מבצעים מול הממשק, ללא פרשנות או דעה אישית שלהם. בנוסף, עליהם לומר בקול מחשבות או התלבטויות לפני ביצוע פעולה. תהליך זה יכול לעזור לחוקרים להבין את אופן וסדר החשיבה של המשתמשים, שכן זו הדרך היעילה ביותר להבין מחשבות ולבטים בזמן אמת.
+                        </p>
+                        <br />
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" src="storyline/5SecondTest-V3 - Storyline output/story.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--Card sorting-->
+            <div id="CardSorting" class="container content">
+                <div>
+                    <div class="col-12">
+                        <h3>Card Sorting</h3>
+                        <p style="max-width:90%">
+                            במתודה זו המשתמשים מקבלים מספר פתקים שעליהם למיין, ללא הוראות או הכוונות מיוחדות. המיון מתבצע רק לפי חוש ההיגיון והסדר שלהם. <br />השימוש במתודה נפוץ כאשר יש צורך להבין מהי הדרך היעילה והנכונה ביותר לסידור תכנים בממשק.
+                        </p>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" src="storyline/5SecondTest-V3 - Storyline output/story.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--data infografic-->
+        <div id="dataInfografic" class="container content">
+            <div>
+                <div class="col-12">
+                    <h3>ניתוח Data</h3>
+                    <p style="max-width:80%">
+                        בפרק זה תבינו את כוחו של המידע. בקורס תלמדו שבמהלך מחקרי מעקב עיניים נקבל סוגי מידע מגוונים ושונים, וכל אחד מהם יוצג לנו בדרך אחרת וישמש למטרות מסוימות. <br /> באינפוגרפיקה אינטראקטיבית זו תוכלו ללמוד על:
+                    </p>
+                    <ul>
+                        <li>סוגי פלטים שונים מתוך מערכת Tobii</li>
+                        <li>מה המידע המתקבל מכל פלט</li>
+                        <li>מדדים ומושגים הקשורים למערכת</li>
+                    </ul>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 rounded">
+                    <iframe class="embed-responsive-item" src="storyline/DATA - Storyline output/story.html" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!--אודות-->
+        <div id="divAbout" class="ABOUT">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <h2 class="text-center">אודות</h2>
+                        <p class="text-center">
+                            אתר הדרכה רספונסיבי  המאגד חומרים הדרכתיים התומכים בקורס "חקר חווית משתמש ולמידה באמצעות מעקב תנועות עיניים", כדי לאפשר לסטודנטים הלוקחים חלק בקורס ללמוד על הנושאים השונים בטרם הגעתם לשיעור.
+                            <br />
+                            <span> פרויקט גמר, תש"פ</span>
+                            <br />
+                        </p>
+                        <h4><a href="http://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a></h4>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="rounded" src="images/logo HIT.JPG" />
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <br />
+                                <span>צוות הפרויקט:</span>
+                                <br>
+                                <p>סתו לחייני ובן שני</p>
+                                <span>מנחים:</span>
+                                <br>
+                                <p>ד"ר היילי וייגלט-מרום ואורן בן אהרון </p>
+                            </div>
+                        </div>
+                        <hr />
+                        <p class="text-center">
+                            ©   כל הזכויות שמורות למכון הטכנולוגי חולון HIT
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer font-small bg-dark text-white">
+            <div class="footer-copyright text-center py-3">
+                <p>תוצר זה פותח במסגרת פרויקט גמר לתואר ראשון  <a href=" https://www.hit.ac.il/telem/overview">בפקולטה לטכנולוגיות למידה</a> ,  <a href="https://www.hit.ac.il/">HIT</a></p>
+                <p>תמונות באדיבות מ <a href="https://www.freepik.com">freepik</a> | סאונד מתוך <a id="FreePik" href="https://www.bensound.com/">Bensound</a></p>
+            </div>
+        </footer>
+    </article>
+</body>
+</html>
+
+
