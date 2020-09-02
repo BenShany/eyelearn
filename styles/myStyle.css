@@ -1,0 +1,407 @@
+﻿body {
+    direction: rtl;
+    font-family: 'Rubik';
+    height: 100%;
+    margin: 0;
+}
+
+header li {
+    text-align: right;
+    padding-left: 10px;
+    font-size: 14pt;
+}
+
+/*<!-- תפריט המבורגר-- >*/
+.custom-toggler.navbar-toggler {
+    border-color: black;
+    padding: 10px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url( "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#icon{
+    margin-right:20%;
+}
+
+
+/*מרווח בין הכרטיסיות במסכים*/
+@media only screen and (max-width: 600px) {
+    /*.space {
+        margin-bottom: 3%;
+    }*/
+
+    h4 {
+        font-size: 5em;
+    }
+    #header-title h1 {
+        font-size: 5em;
+    }
+    .content h1 {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    /*.space {
+        margin-bottom: 3%;
+    }*/
+
+    h4 {
+        font-size: 1em;
+    }
+    #header-title h1 {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1000px) {
+  
+
+    #header-title h1 {
+        font-size: 1em;
+    }
+}
+
+article {
+    background-color: white;
+}
+
+p b {
+    color: black;
+    text-align: right;
+}
+
+.timeWatch {
+    color: #19afd8;
+    text-align: right;
+}
+
+.us img {
+    border: none;
+}
+
+.us p {
+    text-align: center;
+}
+
+#divAbout {
+    padding-top:50px;
+    padding-bottom:50px;
+    text-align: center;
+}
+
+    #divAbout h4 {
+        text-align:center;
+        font-size:16pt;
+    }
+    #divAbout h2 {
+        text-align: center;
+    }
+    #divAbout p {
+        padding-top: 3%;
+        text-align: right;
+        max-width:550px;
+    }
+    #divAbout img{
+        width:80%;
+        
+    }
+    #divAbout span {
+    font-weight: bolder;
+    font-size: 14pt
+}
+        .heading span {
+        background: none repeat scroll 0 0 #FFFFFF;
+        padding: 15px 15px 0px 15px;
+        position: relative;
+        top: 13px;
+        font-size: xx-large;
+    }
+
+/*קרדיטים*/
+#freePik {
+    font-size: 5pt;
+}
+
+footer p {
+    font-size: 9pt;
+}
+
+@keyframes example {
+    0% {
+        color: #19afd8;
+    }
+
+    25% {
+        color: #8b4313;
+    }
+
+    50% {
+        color: #1ce1db;
+    }
+
+    100% {
+        color: #343a40;
+    }
+}
+
+.myP {
+    text-align: right;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/033.jpeg');
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    color: white
+}
+  
+#header-title {
+    color: white !important;
+    background-color: black;
+    opacity: 0.6;
+}
+
+
+
+.content {
+   
+    /*background-color: white;*/
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.enter-text {
+    /*background-color:none;*/
+    color:black;
+    text-align:right;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+
+.card {
+    border: none !important;
+    /*box-shadow: 5px 10px 20px 5px #888888;*/
+}
+.card-deck{
+    margin-bottom:30px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*shadow*/
+/* The slow way */
+.make-it-slow {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+    /* Transition to a bigger shadow on hover */
+    .make-it-slow:hover {
+        box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.3);
+    }
+
+.hidden {
+    display: none;
+    padding: 50px;
+}
+/*כפתור "צפייה" בכרטסיות*/
+.aButton {
+    background-color: #549d9d;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+    .aButton:hover {
+        background-color: lightgray;
+        color: #018385;
+    }
+    #methods h5 {
+        font-size: 1rem;
+        text-align: left;
+    }
+#tobbiVideo1, #tobbiVideo2, #tobbiVideo3, #CardSorting, #firstClick, #thinkAloud, #fiveSecondTest, #abTesting {
+    display: none;
+}
+    #tobbiVideo1 h5{
+        color:black;
+    }
+    /*header video*/
+    header {
+        position: relative;
+        background-color: black;
+        height: 90vh;
+        min-height: 25rem;
+        width: 100%;
+        /*overflow: hidden;*/
+    }
+
+    header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    header .container {
+        position: relative;
+        z-index: 3;
+    }
+
+    header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.4;
+        z-index: 1;
+    }
+    header .overlay h1 {
+            font-size: 1rem;
+            margin-top: 50%;
+        }
+
+    header .overlay p {
+            font-size: 1rem;
+        }
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('../images/lab3.jpeg') black no-repeat center center scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+
+
+    }
+        header video {
+            display: none;
+        }
+}
+
+header #Aoverlay {
+    top: 0;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+
+#logoDiv {
+    background-color: white;
+    z-index: 3;
+}
+
+/*end styling header video*/
+
+
+#firstdiv {
+    background-image: url('../images/newb2.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.navbar-collapse{
+    flex-grow:0 !important;
+}
+
+#navbarResponsive a:hover {
+        color: #018385;
+        text-decoration: none;
+}
+
+/*עיצוב שלושת הכרטיסיות בהתחלה של הפרקים*/
+.parts1 {
+    background-color: #018385;
+    color: white;
+}
+
+    .parts1:hover {
+        background-color: white;
+        color: #018385;
+    }
+#circlbutton {
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    color: #018385;
+}
+    #circlbutton:hover {
+        background-color: lightgray;
+        color: white;
+    }
+
+.parts2 {
+    background-color: white;
+    color: black;
+}
+
+.colorb {
+    background-color: #f3f6f8;
+    
+}
+.parallax2 {
+    /* The image used */
+   
+    background-image: url('../images/newb2.png');
+    /* Set a specific height */
+    /*min-height: 500px;*/
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*padding-bottom: 50px;
+    padding-top: 100px;*/
+}
+.colorc {
+    /*background-color: #fbfbfb;*/
+    background-color: white;
+}
+
+.colorn {
+    background-image: url('../images/new3.PNG');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+.ABOUT {
+    background-image: url('../images/ABOUT.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
